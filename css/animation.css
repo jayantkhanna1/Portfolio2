@@ -1,0 +1,45 @@
+.fadeup {
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}
+.fadedown{
+    animation: fadeDown 1s ease forwards;
+}
+@keyframes fadeDown {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+    
+}
+
+
+#videoFrame{
+    width: 800px;
+    height: 70vh;
+}
+#video_element{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 900;
+    position: fixed;
+    display: none;
+}

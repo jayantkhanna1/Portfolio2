@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'futura-pt';
+    src: url('../fonts/futura-font.woff') format('woff2'),
+        url('../fonts/futura-font.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+#index, #projects, #work, #certification {
+    display: none;
+}
+
+#index_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a0a0a;
+    opacity: 0.5;
+}
+
+#header {
+    z-index: 5;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00000044;
+}
+
+.header_link {
+    /* margin-right: 90px; */
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+    font-size: 18px;
+    z-index: 10;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    opacity: 1 !important;
+    transition: color 0.5;
+}
+
+.header_link:hover {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.active:hover {
+    color: #bc85ff;
+    font-weight: 500;
+}
+
+.active {
+    color: #bc85ff;
+    font-weight: 500;
+}
+
+#project_heading, #contact_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 29vh;
+}
+
+#project_heading h2, #contact_heading h2 {
+    user-select: none;
+    white-space: nowrap;
+    position: absolute;
+    /* top: 12vh; */
+
+    font-size: 20vh;
+    font-family: 'futura-pt';
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    pointer-events: none;
+    margin: 0 auto;
+    margin-left: 40px;
+    width: 100vw;
+    text-align: center;
+    color: rgba(255, 255, 255, .1);
+    letter-spacing: 5vh;
+    font-weight: 100;
+}
+
+#project_heading p, #contact_heading p {
+    user-select: none;
+    position: relative;
+    font-family: 'futura-pt';
+    white-space: nowrap;
+    pointer-events: none;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.762);
+    text-transform: uppercase;
+    letter-spacing: 0.6vw;
+    font-size: .9vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+#contact_heading {
+    top: 80vh;
+}
+
+#contact_heading h2 {
+    letter-spacing: 2vh;
+}
+
+#scrollable {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+#scrollable::-webkit-scrollbar {
+    width: 0px;
+}
+
+#scrollable::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#scrollable::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+}
+
+
+#scrollable::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .1);
+    ;
+}
+
+#about {
+    height: 100vh;
+}
+
+#about_img img {
+    height: 1024px;
+    width: 70%;
+}
+
+#about_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    top: 50vh;
+}
+#about_me_text{
+    position: relative;
+    top: 50vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 100vw;
+}
+#about_me_text h2{
+    text-align: center;
+    pointer-events: none;
+    margin-top: 10vh;
+    user-select: none;
+    margin-bottom: 5vh;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .5vw;
+    font-size: 25px;
+    font-family:'futura-pt';
+    color: #3d5257;
+}
+#about_me_text p{
+    font-family: 'futura-pt';
+    user-select: none;
+    font-size: 1.5vw;
+    color: #ffffff;
+    width: 80vw;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0.1vw;
+    font-weight: 100;
+}
+#contact-options{
+    position: relative;
+    top: 100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 150px;
+}
+#contact-options a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#about{
+    z-index: 500;
+}

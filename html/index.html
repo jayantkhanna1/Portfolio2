@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Jayant Khanna</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/index.css" id="themeStylesheet">
+    <link rel="stylesheet" href="../css/music.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/internal_blogs.css">
+
+    <!-- Script tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/ec7d8e2d79.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Background div -->
+    <div id="index_background">
+        <!-- Header -->
+        <section id="header">
+            <a href="javascript:void(0)" onclick="showIndex()" class="active header_link" id="home_link">Home</a>
+            <a href="javascript:void(0)" onclick="showProjects()" class="header_link" id="projects_link">Projects</a>
+            <a href="javascript:void(0)" onclick="showWork()" class="header_link" id="work_link">Work</a>
+            <a href="javascript:void(0)" onclick="showCert()" class="header_link"
+                id="certifications_link">Certifications</a>
+            <a href="javascript:void(0)" onclick="showAbout()" class="header_link" id="about_link">About Me</a>
+        </section>
+
+        <!-- Home page data -->
+        <section id="index" class="fadeup">
+            <section id="name_outer">
+                <section id="name_inner">
+                    JAYANT KHANNA
+                </section>
+                <section id="who_me">
+                    Developer | AI/ML Engineer | Cyber Security Enthusiast
+                </section>
+            </section>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div id="scrollable">
+                <div id="project_heading">
+                    <h2>PROJECTS</h2>
+                    <p>Web Development | AI | Ethical Hacking</p>
+                </div>
+                <div id="project_cards">
+                    <div class="project_card tilt" onclick="openBlog('qwertyuiop')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/djangofy.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">A Backend Automation Project</p>
+                            <h3 class="content-title">Djangofy</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('xdcfgh')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/duplexdash.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">A house listing application</p>
+                            <h3 class="content-title">Duplex Dash</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('fgtftg')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/backdoor.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">A reverse socket based</p>
+                            <h3 class="content-title">Python Backdoor</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('poijb')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/medically.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">An hospital ERP system</p>
+                            <h3 class="content-title">Medically</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('wrgwfw')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/encryptex.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">An Online Chat Application</p>
+                            <h3 class="content-title">Encryptex</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('sedtryguhj')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/leetcodebot.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">An automated bot to solve leetcode problems</p>
+                            <h3 class="content-title">Leetcode Bot</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('poiujaa')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/hrable.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">An automated platform for HR</p>
+                            <h3 class="content-title">Hrable</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('mnhjuhb')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/notify.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">An application to take notes</p>
+                            <h3 class="content-title">Notify</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('juyhbfd')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/samagama.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">A ticket generator for GEU</p>
+                            <h3 class="content-title">Samagama</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('ljh')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/tia.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">An easy-to-use ERP for school</p>
+                            <h3 class="content-title">School ERP</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work">
+            <div id="scrollable">
+                <div id="project_heading">
+                    <h2>Internships</h2>
+                    <p>Ecommerce | Healthcare | Product-Based</p>
+                </div>
+                <div id="project_cards">
+                    <div class="project_card tilt" onclick="openBlog('sdtyhnm')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/trivy.png" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Jaipur | India | May'21 - July'21</p>
+                            <h3 class="content-title">Trivy Technologies</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('ljh')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/third_origin.png" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">North Carolina | USA | March'22 - Aug'22</p>
+                            <h3 class="content-title">Third Origin</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('ljh')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/farzi.png" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Manhattan | USA | Sept'22 - April'23</p>
+                            <h3 class="content-title">Farzi Engineer</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('ljh')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/docplix.png" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Lucknow | India | March'23 - Present</p>
+                            <h3 class="content-title">Docplix</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="project_heading" style="margin-top: 150px;">
+                    <h2>Freelance</h2>
+                    <p>India | England | UAE</p>
+                </div>
+                <div id="project_cards">
+                    <div class="project_card tilt" onclick="openBlog('cyguhij')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/recall.png" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">UAE | Ecommerce website</p>
+                            <h3 class="content-title">Recall</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt" onclick="openBlog('jilhugg')">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/foodhostel.png" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">India | Food Booking</p>
+                            <h3 class="content-title">Foody GEU</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification -->
+        <section id="certification">
+            <div id="scrollable">
+                <div id="project_heading">
+                    <h2>Certificates</h2>
+                    <p>Microsoft | Adobe | Amazon | ANZ | Delloite | GoldmanSachs</p>
+                </div>
+                <div id="project_cards">
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/adobe_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Adobe | September 16th, 2021</p>
+                            <h3 class="content-title">Adobe UX Foundation</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/ai900_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Microsoft | July 23rd, 2021</p>
+                            <h3 class="content-title">Microsoft AI Fundamentals</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="../images/anz_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">ANZ | February 10th, 2022</p>
+                            <h3 class="content-title">ANZ Cyber Program</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/aws_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">AWS | June 12th, 2021</p>
+                            <h3 class="content-title">Amazon Web Services - EC2</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/az900_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Microsoft | March 31st, 2021</p>
+                            <h3 class="content-title">Microsoft Azure Fundamentals</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/delloite_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Delloite | February 3rd, 2022</p>
+                            <h3 class="content-title">Delloite STEM connect program</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/goldman_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">GoldmanSachs | January 17th, 2022</p>
+                            <h3 class="content-title">GoldmanSachs Engineering program</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/linuxworld_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Linux World | june 13th, 2021</p>
+                            <h3 class="content-title">Linux World Javascript</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/mta_98_383_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Microsoft | March 25th, 2021</p>
+                            <h3 class="content-title">Microsoft Technology Associate</h3>
+                        </div>
+                    </div>
+
+                    <div class="project_card tilt">
+                        <div class="content-overlay"></div>
+                        <img class="content-image " src="../images/publicis_cert.svg" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Publicis Sapient | September 13th, 2022</p>
+                            <h3 class="content-title">Publicis Sapient</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div id="scrollable">
+                <div id="project_heading">
+                    <h2>About</h2>
+                    <p>About | Contact</p>
+                </div>
+
+                <div id="about_img">
+                    <img src="../images/myimg.jpg" alt="">
+                </div>
+
+                <div id="about_me_text">
+                    <h2>[ About ]</h2>
+                    <p>Hey there! I'm Jayant Khanna, a dedicated tech enthusiast with a boundless passion for all things
+                        computer science and engineering. My journey in the realm of technology has been an exhilarating
+                        one, filled with curiosity, innovation, and a drive to create meaningful solutions.
+                        <br><br>
+                        As a software developer, I find immense joy in unraveling complex challenges and transforming
+                        them into elegant and efficient solutions. From developing cutting-edge Automatic Speech
+                        Recognition (ASR) systems that empower medical professionals to decipher challenging
+                        terminologies with ease, to crafting user-friendly web applications that streamline everyday
+                        tasks, I am fueled by the opportunity to make a tangible impact in the lives of people.
+                        <br><br>
+                        My tech journey has taken me through various programming and scripting languages, providing me
+                        with a versatile skill set. I excel in full-stack development, leveraging Git and GitHub to
+                        collaborate seamlessly with teams. My design skills come to life as I create intuitive
+                        interfaces, blending wireframing, interaction design, and data visualization to deliver
+                        user-centric experiences.
+                        <br><br>
+                        But beyond the code and projects, there's more to me than meets the eye. While I immerse myself
+                        in the fascinating world of tech, I also nurture other interests. Traveling offers me a chance
+                        to explore new cultures and expand my horizons. Chess, a game of strategy and wit, keeps my mind
+                        sharp and agile. Additionally, I have a genuine love for languages and enjoy learning new
+                        tongues as a means to connect with diverse communities.
+                        <br><br>
+                        As I continue on my journey, I remain committed to continuous learning and growth, eager to take
+                        on new challenges and create innovative solutions that positively impact the world around us.
+                        So, let's embark on this tech adventure together and unlock the endless possibilities that lie
+                        ahead!
+                    </p>
+                </div>
+
+                <div id="contact_heading">
+                    <h2>Contact</h2>
+                    <p>Collaborate | Hire | Connect</p>
+                </div>
+
+                <div id="contact-options">
+                    <a class="icon" id="email" title="Mail" href="mailto:jayantkhanna3105@gmail.com">
+                        <i class="fa-regular fa-2x fa-envelope" style="color: white;"></i>
+                    </a>
+                    <a class="icon" id="phone" title="Phone" href="tel:+918273831664">
+                        <i class="fa-solid fa-2x fa-phone" style="color: white;"></i>
+                    </a>
+                    <a class="icon" id="github" title="Github" href="https://github.com/jayantkhanna1" target="_blank">
+                        <i class="fa-brands fa-2x fa-github" style="color: white;"></i>
+                    </a>
+                    <a class="icon" id="insta" title="Instagram" href="https://www.instagram.com/jayant_khanna1/"
+                        target="_blank">
+                        <i class="fa-brands fa-2x fa-instagram" style="color: white;"></i>
+                    </a>
+                    <a class="icon" id="linkedin" title="Linkedin" href="https://www.linkedin.com/in/jayantkhanna1/"
+                        target="_blank">
+                        <i class="fa-brands fa-2x fa-linkedin-in" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internal Blogs -->
+        <section id="internal_blogs">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="modal_close_button">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div id="next_prev_buttons">
+                            <div class="inner_text" id="prev_blog" onclick="prevBlog()">
+                                <p>Previous</p>
+                                <img src="../images/prev.svg" alt="">
+                            </div>
+                            <div class="inner_image">
+                                <img src="../images/keyboard.svg" alt="">
+                            </div>
+                            <div class="inner_text" onclick="nextBlog()" id="next_blog">
+                                <img src="../images/next.svg" alt="" id="next_svg">
+                                <p>Next</p>
+                            </div>
+                        </div>
+                        <div id="main-body">
+                            <p id="heading_text"></p>
+                            <img src="" alt="" id="image_inner_blog">
+                            <div id="go_to_code">
+                                <a href="" target="_blank" id="go_to_code_a">View <img src="../images/tile_arrow.svg" alt=""></a>
+                            </div>
+                            <p id="main_blog_body">
+                                
+                            </p>
+                        </div>
+                        <div id="blog_footer">
+                            <div id="image_lined">
+                                <img src="../images/footer_blog_img.svg" alt="" id="blog_footer_img">
+                                <hr id="hr">
+                            </div>
+                            <p id="blog_footer_name">Jayant Khanna</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Music controls -->
+    <div id="music_control">
+        <section id="inner_music_control" onclick="pauseMusic()">
+            <div class="music_control_rod" id="rod_1"></div>
+            <div class="music_control_rod" id="rod_2"></div>
+            <div class="music_control_rod" id="rod_3"></div>
+            <div class="music_control_rod" id="rod_4"></div>
+        </section>
+        <section id="music_play_controls" onclick="playMusic()">
+            <div class="music_control_rod_pause"></div>
+            <div class="music_control_rod_pause"></div>
+            <div class="music_control_rod_pause"></div>
+            <div class="music_control_rod_pause"></div>
+        </section>
+    </div>
+
+    <!-- Audio -->
+    <audio style="display:none;" loop id="music">
+        <source src="../audio/INTERSTELLAR.mp3" type="audio/mpeg">
+        <!-- Add ogg -->
+    </audio>
+
+    <!-- Scripts -->
+    <script src="../js/cookie.js"></script>
+    <script src="../js/loader.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/music_control.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/work.js"></script>
+    <script src="../js/about.js"></script>
+    <script src="../js/certificates.js"></script>
+    <script src="../js/vanilla-tilt.js"></script>
+    <script src="../js/blogs.js"></script>
+
+    <!-- Vanda JS background  -->
+    <script>
+        VANTA.NET({
+            el: "#index_background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 0.5,
+            scaleMobile: 1.00,
+            points: 15.00,
+            maxDistance: 20.00,
+            spacing: 15.00,
+            color: "#3e1378",
+            backgroundColor: "#0a0517",
+
+        })
+    </script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".tilt"));
+        VanillaTilt.init(document.querySelector(".tilt"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+
+</body>
+
+</html>

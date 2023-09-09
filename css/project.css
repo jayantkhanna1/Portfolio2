@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'futura-pt';
+    src: url('../fonts/futura-font.woff') format('woff2'),
+        url('../fonts/futura-font.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+#index,#work,#about,#certification {
+    display: none;
+}
+
+#index_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a0a0a;
+    opacity: 0.5;
+}
+
+#header {
+    z-index: 5;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00000044;
+}
+
+.header_link {
+    /* margin-right: 90px; */
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+    font-size: 18px;
+    z-index: 10;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 600;
+    opacity: 1 !important;
+    transition: color 0.5;
+}
+
+.header_link:hover {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.active:hover {
+    color: #bc85ff;
+    font-weight: 500;
+}
+
+.active {
+    color: #bc85ff;
+    font-weight: 500;
+}
+
+#project_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35vh;
+}
+
+#project_heading h2 {
+    user-select: none;
+    white-space: nowrap;
+    position: absolute;
+    /* top: 12vh; */
+    font-size: 20vh;
+    font-family: 'futura-pt';
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    pointer-events: none;
+    margin: 0 auto;
+    width: 100vw;
+    text-align: center;
+    color: rgba(255, 255, 255, .1);
+    letter-spacing: 2vh;
+    font-weight: 100;
+}
+
+#project_heading p {
+    user-select: none;
+    position: relative;
+    font-family: 'futura-pt';
+    white-space: nowrap;
+    pointer-events: none;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.762);
+    text-transform: uppercase;
+    letter-spacing: 0.6vw;
+    font-size: .9vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+#projects {
+    height: 100vh;
+    ;
+}
+
+#project_cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    position: relative;
+    top: 55vh;
+    padding-bottom: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.project_card img {
+    width: 550px;
+    height: 300px;
+    cursor: pointer;
+}
+
+#scrollable {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* width */
+#scrollable::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+#scrollable::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Handle */
+#scrollable::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#scrollable::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .1);
+    ;
+}
+
+.project_card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.project_card .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+.project_card:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    margin-left: 12px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.project_card:hover .content-details {
+    top: 80%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.15em;
+    font-family: 'futura-pt';
+}
+
+.content-details p {
+    color: #fff;
+    margin-bottom: 12px;
+    font-family: 'futura-pt';
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}

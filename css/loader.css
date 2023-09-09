@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'futura-pt'; /* Choose a name for your font */
+    src: url('../fonts/futura-font.woff') format('woff2'), /* Format for modern browsers */
+         url('../fonts/futura-font.woff') format('woff'); /* Format for older browsers */
+    /* You can add more formats if needed (e.g., .ttf, .otf) */
+  }
+  
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    /* Replace with your desired background color */
+}
+
+.loader-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.loader-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 3px;
+    border: none;
+    outline: hidden;
+    background-color: #572990;
+    transform: translate(-50%, -50%);
+    border-radius: 500px;
+    animation: growOutward 3s infinite ease-in-out;
+}
+
+#outer_line {
+    border: none;
+    outline: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: 3px;
+    border-radius: 500px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes growOutward {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90vw;
+        /* Adjust the value to control the length of the growing line */
+    }
+}
+#index_background{
+    display: none;
+}
+#loader-text {
+    position: fixed;
+    left: 40%;
+    width: 309px;
+    align-items: center;
+    font-family: 'futura-pt', sans-serif;
+    color: white;
+}
