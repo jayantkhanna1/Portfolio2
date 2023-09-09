@@ -8,7 +8,7 @@ function showProjects() {
     // change css
     setTimeout(function () {
         const themeStylesheet = document.getElementById('themeStylesheet');
-        theme = '../css/project.css'
+        theme = 'css/project.css'
         themeStylesheet.setAttribute('href', theme);
 
         console.log('Project CSS loaded')

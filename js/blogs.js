@@ -8,7 +8,7 @@ function openBlog(id) {
     var link = ""
 
     // Assuming you have a JSON file named "data.json" in the same directory
-    const jsonFilePath = '../json/blog.json';
+    const jsonFilePath = 'json/blog.json';
 
     // Using the fetch API to retrieve the JSON file
     fetch(jsonFilePath)
@@ -36,7 +36,7 @@ function openBlog(id) {
             document.getElementById("prev_blog").setAttribute("data-prev", prev)
             document.getElementById("next_blog").setAttribute("data-next", next)
             document.getElementById("heading_text").innerHTML = heading
-            document.getElementById("image_inner_blog").src = "../images/" + img
+            document.getElementById("image_inner_blog").src = "images/" + img
             document.getElementById("main_blog_body").innerHTML = body
             document.getElementById("go_to_code_a").href = link
 

@@ -11,7 +11,7 @@ function addLoaderToBody() {
 }
 function addLoaderCSS() {
     const themeStylesheet = document.getElementById('themeStylesheet');
-    theme = '../css/loader.css'
+    theme = 'css/loader.css'
     themeStylesheet.setAttribute('href', theme);
     console.log('Loader CSS added')
 }

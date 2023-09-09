@@ -8,7 +8,7 @@ function showWork() {
     // change css
     setTimeout(function () {
         const themeStylesheet = document.getElementById('themeStylesheet');
-        theme = '../css/work.css'
+        theme = 'css/work.css'
         themeStylesheet.setAttribute('href', theme);
 
         console.log('Project CSS loaded')

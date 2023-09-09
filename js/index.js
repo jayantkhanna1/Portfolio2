@@ -6,7 +6,7 @@ function showIndex() {
     // Changing stylesheet back to default
     setTimeout(function () {
         const themeStylesheet = document.getElementById('themeStylesheet');
-        theme = '../css/index.css'
+        theme = 'css/index.css'
         themeStylesheet.setAttribute('href', theme);
         console.log('Loader CSS Replaced with index.css')
 

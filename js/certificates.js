@@ -8,7 +8,7 @@ function showCert() {
     // change css
     setTimeout(function () {
         const themeStylesheet = document.getElementById('themeStylesheet');
-        theme = '../css/certificate.css'
+        theme = 'css/certificate.css'
         themeStylesheet.setAttribute('href', theme);
 
         console.log('Certificate CSS loaded')
